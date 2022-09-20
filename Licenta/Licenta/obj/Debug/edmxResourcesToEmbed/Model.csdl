@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TransLoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="TransLoEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="ChartData" ReturnType="Collection(TransLoModel.ChartData_Result)" />
+  </EntityContainer>
+  <ComplexType Name="ChartData_Result">
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="26" Scale="12" />
+    <Property Type="String" Name="Gen" Nullable="true" MaxLength="8" />
+  </ComplexType>
+</Schema>
